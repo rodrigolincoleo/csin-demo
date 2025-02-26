@@ -1,9 +1,5 @@
 {
   "projects": {
-    "default": "chaiten-demo",
-    "chaiten": "chaiten-demo",
-    "chaiten demo": "chaiten-demo"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "csin-demo"
+  }
 }

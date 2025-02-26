@@ -72,7 +72,7 @@ function Navbar({ navBg }) {
               letterSpacing: '0.1rem',
             }}
           >
-            Patagonia Verde
+            Csin
           </Typography>
         </Box>
 
@@ -103,6 +103,7 @@ function Navbar({ navBg }) {
           </>
         ) : (
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <Button {...buttonProps} to="about">Quienes Somos</Button>
             <FormControl variant="standard" sx={{ minWidth: 150, mr: 2 }}>
               <Select
                 displayEmpty
@@ -115,16 +116,16 @@ function Navbar({ navBg }) {
                   '&::after': { borderBottom: 'none' },
                 }}
               >
-                <MenuItem sx={menuItemStyles}><Button {...buttonProps} to="caracteristicas">Características</Button></MenuItem>
-                <MenuItem sx={menuItemStyles}><Button {...buttonProps} to="flora">Flora y fauna</Button></MenuItem>
-                <MenuItem sx={menuItemStyles}><Button {...buttonProps} to="actividades">Actividades</Button></MenuItem>
-                <MenuItem sx={menuItemStyles}><Button {...buttonProps} to="about">El Proyecto</Button></MenuItem>
+                <MenuItem sx={menuItemStyles}><Button {...buttonProps} to="ingenieria">Ingeniería</Button></MenuItem>
+                <MenuItem sx={menuItemStyles}><Button {...buttonProps} to="construccion">Construcción</Button></MenuItem>
+                <MenuItem sx={{ ...menuItemStyles, display: 'none' }}><Button {...buttonProps} to="construccion">Proyectos</Button></MenuItem>
               </Select>
             </FormControl>
-            <Button {...buttonProps} to="masterplan">Masterplan</Button>
-            <Button {...buttonProps} to="fotos">Fotos</Button>
-            <Button {...buttonProps} to="video">Videos</Button>
-            <Button {...buttonProps} to="ubicacion">Ubicación</Button>
+            
+            
+            <Button {...buttonProps} to="actual">Actualidad</Button>
+            <Button {...buttonProps} to="desarrollo">Desarrollo</Button>
+            <Button {...buttonProps} to="destacados">Destacados</Button>
             <Button {...buttonProps} to="contact">Contacto</Button>
           </Box>
         )}

@@ -1,15 +1,13 @@
 import React, { useEffect, useState, Suspense } from 'react';
 import { Fab, Box } from '@mui/material';
 import PhotoGallery from './GaleríaFotos';
-import VideoSection from './Video';
 import Contact from './Contact';
-import Actividades from './Actividades';
-import Caracteristicas from './Caracteristicas';
-import Flora from './FloraFauna';
-import Ubicacion from './Ubicacion';
-import Links from './Links';
+import Destacados from './Destacados';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Masterplan from './Masterplan';
+import Desarrollo from './Desarrollo';
+import Actual from './Actualidad';
+import Ingenieria from './ingeniería';
+import Construccion from './Construccion';
 const HeroSection = React.lazy(() => import('./HeroSection'));
 const About = React.lazy(() => import('./About'));
 export default function Home() {
@@ -49,14 +47,13 @@ export default function Home() {
     <Suspense fallback={<div>Loading...</div>}>
       
       <HeroSection setNavbarBg={setNavBg}/>
-      <About />
-      <Caracteristicas />
-      <Flora />
-      <Actividades />
-      <Masterplan/>
+      <About/>
+      <Ingenieria/>
+      <Construccion />
+      <Actual/>
       <PhotoGallery />
-      <VideoSection />
-      <Ubicacion />
+      <Desarrollo />
+      <Destacados />
       <Contact />
 
       {/* Botón flotante para volver arriba */}

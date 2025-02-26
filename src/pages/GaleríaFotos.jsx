@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { Box, Grid, Dialog, DialogContent, useMediaQuery, useTheme } from "@mui/material";
 
 const images = [
-  "https://ik.imagekit.io/k244xcphl/assets/images/Fotos%20Chait%C3%A9n/36.jpg?updatedAt=1737735003141",
-  "https://ik.imagekit.io/k244xcphl/assets/images/Fotos%20Chait%C3%A9n/40.jpg?updatedAt=1737735806473",
-  "https://ik.imagekit.io/k244xcphl/assets/images/Fotos%20Chait%C3%A9n/28.jpg?updatedAt=1737734993668",
-  "https://ik.imagekit.io/k244xcphl/assets/images/Fotos%20Chait%C3%A9n/29.jpg?updatedAt=1737734993871",
-  "https://ik.imagekit.io/k244xcphl/assets/images/Fotos%20Chait%C3%A9n/30.jpg?updatedAt=1737735806006",
-  "https://ik.imagekit.io/k244xcphl/assets/images/Fotos%20Chait%C3%A9n/32.jpg?updatedAt=1737734994528",
-  "https://ik.imagekit.io/k244xcphl/assets/images/Fotos%20Chait%C3%A9n/34.jpg?updatedAt=1737735000681",
-  "https://ik.imagekit.io/k244xcphl/assets/images/Fotos%20Chait%C3%A9n/35.jpg?updatedAt=1737735003140",
-  "https://ik.imagekit.io/k244xcphl/assets/images/Fotos%20Chait%C3%A9n/39.jpg?updatedAt=1737735000301",
+  "https://media.istockphoto.com/id/1482828400/photo/5g-repeater-tower.jpg?s=1024x1024&w=is&k=20&c=fyiTPTon66J8pKpGO-3nHxrInR3BvcFpgp1BUltl2eA=",
+  "https://media.istockphoto.com/id/1299904059/photo/an-engineer-is-working-on-height-using-a-safety-helmet-and-equipment-fixing-an-antenna.jpg?s=1024x1024&w=is&k=20&c=lx1b4pW2ikT4RTsJNRVFxXj4SjfM80SJJtIvcBaWK8o=",
+  "https://media.istockphoto.com/id/1264152460/photo/engineers-working-on-5g-antenna.jpg?s=1024x1024&w=is&k=20&c=SGJeJReq8Ft_QscUmBbinPUEKrBJ-KVul_qZb4HMkZg=",
+  "https://media.istockphoto.com/id/836184206/photo/working-at-height.jpg?s=1024x1024&w=is&k=20&c=uc2g44U8GL0JdqLwcs6sAUCj9Ort8yEbZWKbg4ubNWY=",
+  "https://media.istockphoto.com/id/1780480159/photo/mobile-5g-installation-on-high-mast.jpg?s=1024x1024&w=is&k=20&c=WW25WH1uTdkrFEg4XV0Rjjq-llzdwlgqCjCVJXbRLm4=",
+  "https://media.istockphoto.com/id/2168976379/photo/low-angle-view-of-man-working-on-communication-tower-against-sky.jpg?s=1024x1024&w=is&k=20&c=RCrPV0ziLnwu2VEWzWLTlMB-vnJ3iWZfQGePrJdYXlY=",
+  "https://media.istockphoto.com/id/909432046/photo/worker-climbing-on-high-cellular-network-tower.jpg?s=1024x1024&w=is&k=20&c=BjNAgbLTw96Qkg7za7i1-Bp76UfmvHLnY9BxcJ862fs=",
+  "https://media.istockphoto.com/id/185249353/photo/oil-rig-worker.jpg?s=1024x1024&w=is&k=20&c=39reNtfd1PK95AWxRxNLgf4GSU2JZ7FCQg97mKtrMUo=",
+  "https://media.istockphoto.com/id/1213293177/photo/female-engineer-working-on-the-field-near-a-telecommunications-tower.jpg?s=1024x1024&w=is&k=20&c=BhwjJjl_7MuJ9na9M0SOS3ZG50_r8_kZiWu8RnAHFag=",
 ];
 
 const ImageGrid = () => {
@@ -28,8 +28,9 @@ const ImageGrid = () => {
                 src={image}
                 alt={`Thumbnail ${index + 1}`}
                 style={{
-                  width: "100%",
-                  height: "auto",
+                  width: "300px",
+                  height: "200px",
+                  objectFit: "cover",
                   cursor: "pointer",
                   borderRadius: "8px",
                 }}
