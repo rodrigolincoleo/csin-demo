@@ -11,8 +11,7 @@ export default function Actual() {
             xs={6}
         >
             <Row className="justify-content-center">
-                <Col
-                    xs={6}
+                <Col md={10} lg={6}
                 >
 
                     <Typography

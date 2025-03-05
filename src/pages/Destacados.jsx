@@ -25,7 +25,7 @@ const ClientesCarousel = () => {
     <Box id='destacados' sx={{ flexGrow: 1, p: 4, backgroundColor: '#f4f4f4' }}>
       <Grid container justifyContent="center">
         {/* Contenido con ancho de 6 columnas */}
-        <Grid item xs={12} sm={8} md={6}>
+        <Grid item md={12} lg={6}>
           {/* Título */}
           <Typography variant="h3" gutterBottom sx={{ fontWeight: 'bold', textAlign: 'center', color: '#F48C22' }}>
             Desarrollamos construcción de proyectos en las siguientes áreas

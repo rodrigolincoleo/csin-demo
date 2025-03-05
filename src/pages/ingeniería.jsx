@@ -23,7 +23,7 @@ const Ingenieria = () => {
       }}
     >
       <Grid container spacing={2} justifyContent="center" alignItems="center">
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item md={12} lg={6}>
           <Box display="flex" flexDirection="column" alignItems="center">
             <Typography variant="h3" fontWeight="bold" textAlign="center" sx={{ color: "#F48C22", mb: 3 }}>
               Proyectos de Ingeniería

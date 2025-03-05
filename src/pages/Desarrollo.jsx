@@ -39,7 +39,7 @@ export default function Desarrollo() {
             <Container>
                 <Grid container justifyContent="center">
                     {/* Ancho de 6 columnas en pantallas medianas y grandes */}
-                    <Grid item xs={12} sm={8} md={6}>
+                    <Grid item md={12} lg={6}>
                         {/* Título principal */}
                         <Typography
                             variant="h3"
